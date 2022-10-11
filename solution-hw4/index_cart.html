@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="css/style3.css">
+    <script src="JS/rollsData.js" defer></script>
+    <script defer src="js/cart.js"></script>
   </head>
   <body>
 
@@ -45,29 +47,8 @@
           <div class="shopping-cart-container">
   
             <div class="cart-item">
-    
-              <div class="order">
-                <img src="assets/original-cinnamon-roll.jpeg" alt="original cinnamon roll">
-                <p class="details">Original Cinnamon Roll<br>Glazing: Keep Original<br>Pack size: 1</p>
-                <h3>$ 2.49</h3> 
-              </div>
-
-              <p class="remove">Remove</p>
-  
             </div>
   
-            <div class="cart-item">
-    
-              <div class="order">
-                <img src="assets/double-chocolate-cinnamon-roll.jpeg" alt="double-chocolate Cinnamon Roll">
-                <p class="details">Double-Chocolate Cinnamon Roll<br>Glazing: Milk<br>Pack size: 6</p>
-                <h3>$ 27.45</h3>
-              </div>
-
-              <p class="remove">Remove</p>
-              
-            </div>
-              
             <hr>
             <!-- Total Amount and Add to Cart Button -->
           
@@ -83,5 +64,27 @@
         </div>
       </section>
     </main>
+    <template id = "cart-template">
+
+      <div class="cart-item">
+
+        <div class="order">
+
+          <img src="assets/original-cinnamon-roll.jpeg" alt="original cinnamon roll">
+
+          <div class="order-info">
+            <p class="details">Original Cinnamon Roll</p>
+            <p class="glazing">Glazing: Keep Original</p>
+            <p class="pack-size">Pack size: 1</p>
+          </div>
+
+          <h3>$2.49</h3>
+
+        </div>
+
+        <p class="remove">Remove</p>
+
+      </div>
+    </template>
   </body>
 </html>

@@ -105,15 +105,15 @@ h1 {
 }
 
 .order img {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     object-fit: fill;
     border: 2px solid black;
     box-sizing: border-box;
 }
 
-.details {
-    width: 385px;
+.details,.glazing,.pack-size {
+    width: 220px;
     font-size: large;
 }
 
@@ -158,4 +158,9 @@ h1 {
     font-weight: 600;
     width: 150px;
     cursor: pointer;
+}
+.order-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
