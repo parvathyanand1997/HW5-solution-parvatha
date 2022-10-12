@@ -9,15 +9,15 @@ class Glazes {
 	}
 }
 
-//initializing objects of glazes class with the type of glaze and its price
+//initializing objects of Glazes class with the type of glaze and its price
 
-const keepOriginal = new glazes('Keep original',0.0);
-const sugarMilk = new glazes('Sugar milk',0.0);
-const vanillaMilk = new glazes('Vanilla milk',0.50);
-const doubleChocolate = new glazes('Double Chocolate',1.50);
+const keepOriginal = new Glazes('Keep original',0.0);
+const sugarMilk = new Glazes('Sugar milk',0.0);
+const vanillaMilk = new Glazes('Vanilla milk',0.50);
+const doubleChocolate = new Glazes('Double Chocolate',1.50);
 
 
-class packs {
+class Packs {
 
     constructor(packType,packPrice) 
     {
@@ -27,11 +27,11 @@ class packs {
 	}
 }
 
-// initializing objects of packs class with the pack sizes and the price of each pack
-const one = new packs(1,1);
-const three = new packs(3,3);
-const six = new packs(6,5);
-const twelve = new packs(12,10);
+// initializing objects of Packs class with the pack sizes and the price of each pack
+const one = new Packs(1,1);
+const three = new Packs(3,3);
+const six = new Packs(6,5);
+const twelve = new Packs(12,10);
 
 
 //Array of objects
@@ -69,7 +69,7 @@ let gPrice = 0.0;
 let pPrice = 1;
 let totalPrice = 0.0;
 let glaze = "Keep Original";
-let packSize = 1;
+let Packsize = 1;
 
  //Function to extract the price of the selected glazing
 function glazingChange(element) {
@@ -100,7 +100,7 @@ function packChange(element) {
         if(selectedPackOption == packObjectList[i].packType)
         {
             pPrice = Number(packObjectList[i].packPrice);
-            packSize = Number(packObjectList[i].packType);
+            Packsize = Number(packObjectList[i].packType);
         }
     }
     //console.log(pSize);
@@ -138,17 +138,17 @@ document.getElementById("price").innerText = rolls[rollType].basePrice;
 
 
 class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice) {
+    constructor(rollType, rollGlazing, Packsize, basePrice) {
         this.type = rollType;
         this.glazing = rollGlazing;
-        this.size = packSize;
+        this.size = Packsize;
         this.basePrice = basePrice;
     }
 }
 
 //Pushing order to cart array on clicking the 'Add to Cart' button 
 function AddtoCart() {
-    let rollOrder = new Roll(rollType, glaze, packSize, rolls[rollType].basePrice);
+    let rollOrder = new Roll(rollType, glaze, Packsize, rolls[rollType].basePrice);
     cart.push(rollOrder);
     console.log(rollOrder);
 

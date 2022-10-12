@@ -51,6 +51,7 @@ h1 {
 /* Navigation menu buttons */
 
 .btn {
+    
     background-color: white;
     color: black;
     padding: 5px 5px;
@@ -102,6 +103,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .order img {
@@ -159,8 +161,14 @@ h1 {
     width: 150px;
     cursor: pointer;
 }
-.order-info {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-align: left;
+    cursor: pointer;
+
+
 }
